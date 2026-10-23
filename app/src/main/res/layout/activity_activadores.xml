@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTIVADORES"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEstadoActivador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: Esperando acción"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/txtModoLed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo del LED: --"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnLedOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENCENDER LED"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnLedOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APAGAR LED" />
+
+        <Button
+            android:id="@+id/btnLedAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MODO AUTOMÁTICO (ALARMA)" />
+
+        <TextView
+            android:id="@+id/txtUmbralActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umbral de alarma: -- °C"
+            android:textSize="18sp"
+            android:layout_marginTop="28dp" />
+
+        <EditText
+            android:id="@+id/edtUmbral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nuevo umbral en °C (ej: 35)"
+            android:inputType="numberDecimal"
+            android:maxLength="5" />
+
+        <Button
+            android:id="@+id/btnFijarUmbral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIJAR UMBRAL" />
+
+        <Button
+            android:id="@+id/btnVolverActivadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOLVER"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
